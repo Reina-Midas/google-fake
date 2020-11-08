@@ -1,0 +1,186 @@
+/*
+*{
+  margin: 0;
+  padding: 0; con el asterisco aplica a todo el documento HTML
+}
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+header {
+  width: 100%;
+  height: 60px;
+}
+
+.logo{
+  justify-content: center;
+}
+SOLO CUANDO NECESITE AGREGAR UN LOGO JUNTO CON EL NAVI
+*/
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  /*center para centrarlo*/
+}
+
+header nav .nav-right-section {
+  width: 250px;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav-right-section a {
+  margin-right: 10px;
+  margin-left: 10px;
+  /* ESTE SE LO AGREGE YO */
+  color: #000;
+}
+
+nav .nav-right-section .menu-icon {
+  background-image: url("menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+nav .nav-right-section img {
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+main {
+  margin-top: 150px;
+  text-align: center;
+}
+
+main .main-logo,
+main .main-input {
+  width: 530px;
+  margin: 0 auto;
+  /* EL AUTO ES IMPOT POQUE DIVIDE EN 2 EL ESPACIO SOBRANTE Y CENTRA*/
+  margin-bottom: 35px;
+}
+
+main .main-logo img {
+  width: 300px;
+}
+
+main .main-input-container {
+  width: 525px;
+  border-radius: 100px;
+  border: solid 1px rgb(223, 225, 229);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-input input {
+  width: 450px;
+  height: 40px;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+  padding-left: 5px;
+  font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
+  font-size: 16px;
+}
+
+main .main-input-container:hover {
+  box-shadow: 0 1px 6px 0 #20212447;
+  /*SOMBRA INPUT DE GOOGLE*/
+  border-color: #f1f3f5;
+}
+
+main .main-input .search-icon {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png");
+  background-repeat: none;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+main .main-input .micro-icon {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/archive/e/e8/20191108155631%21Google_mic.svg");
+  background-repeat: none;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+main .main-buttons {
+  width: 530px;
+  margin: 0 auto;
+}
+
+main .main-buttons div {
+  display: inline-block;
+}
+
+main .main-buttons button {
+  height: 35px;
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 14px;
+  color:#5F6368;
+  /* LETRA DE BOTONES DE GOGOGLE*/
+  border-radius: 5px;
+  padding: 0 15px;
+  /* PADDING DERECHA E IZQUIERDA*/
+  margin-right: 15px;
+}
+
+main .main-buttons button:hover {
+  border: 1px solid #e4e4e4;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  /* CON ESTOS DOS SE COLOCA EL FOOTER SIEMPRE ABJO DE LA PAG:*/
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  font-size: 13px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+footer .footer-left {
+  justify-self: left;
+}
+
+footer .footer-right {
+  justify-self: right;
+}
+
+footer ul li a {
+  margin: 10px;
+  color: #5f6368;
+}
